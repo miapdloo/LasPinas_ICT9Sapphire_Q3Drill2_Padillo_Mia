@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICE ACTIVITY</title>
+    <style>
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    background: #faf8a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+form{
+
+    background: #bfd6f1; 
+    padding: 30px 25px;
+    border-radius: 10px;
+    width: 320px;
+}
+
+label{
+
+    display:block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-control{
+
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button{
+
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    background: #fefffe;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+
+
+}
+
+#result{
+
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    border-radius: 6px;
+    background-color: #fefffe;
+}
+
+    </style>
+</head>
+<body>
+
+
+<form>
+
+
+<label> Enter 1st number:</label>
+<input type="number" class="form-control" id="num1">
+
+<label> Enter 2nd number:</label>
+<input type="number" class="form-control" id="num2">
+
+<br>
+
+<button type="button" class="btn btn-success" onclick="sapphire()"> Click for answer</button>
+
+<div id="result"> Answer will show here </div>
+
+
+
+</form>
+
+<script>
+
+function sapphire(){
+
+    let sap1 = document.getElementById("num1").value;
+    let sap2 = document.getElementById("num2").value;
+    let ops = Number(sap1) - Number (sap2);
+    document.getElementById("result").innerHTML = "The difference is" + ops;
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
